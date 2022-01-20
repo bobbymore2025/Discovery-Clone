@@ -619,6 +619,9 @@ max-height: 35vw;
     max-width: 50vw;
     line-height: 1.37;
 }
+.scrolling_feedback {
+    padding: 60px 0px;
+}
 
 
 /* Media quiery */
