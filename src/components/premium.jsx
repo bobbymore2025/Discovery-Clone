@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { Caro } from "./manual_carousel";
+
 import Premi_back from "../Images/premi_bck.jpg";
 import Discovery_logo from "../Images/discovery_logo.png";
 import Binge from "../Images/binge_img.png";
@@ -23,6 +25,7 @@ import Tlc from "../Images/tlc_premi.png";
 import Trvl from "../Images/trvl_premi.png";
 import Tv_stream from "../Images/premi_tv.jpg";
 import Safe from "../Images/safe_kids.jpg";
+
 import "../CSS/premium.css"
 
 
@@ -381,6 +384,8 @@ export const Premium=()=>{
         <div className="testi_heading"><div className="testi_head_inner">User Testimonials</div></div>
 
         <div className="scrolling_feedback">
+            <Caro />
+
 
         </div>
      </div>

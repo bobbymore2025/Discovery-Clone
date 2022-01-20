@@ -8,7 +8,7 @@ import { Explore } from './components/explore';
 function App() {
   return (
     <div className="App">
-    <Explore></Explore>
+    <Premium />
     </div>
   );
 }
