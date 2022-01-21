@@ -14,7 +14,7 @@ export const Router = () => {
      
         <Routes>
           
-          <Route path="/home" element={<Home/>} > </Route>
+          <Route path="/" element={<Home/>} > </Route>
           <Route path="/explore" element={<Explore />} > </Route>
          <Route path="/kids" element={<Kids />} > </Route>
          <Route path="/shorts" element={<Shorts />}> </Route>
