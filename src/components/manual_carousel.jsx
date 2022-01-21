@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import Carousel from "react-simply-carousel";
 import "../CSS/manual_carousel.css"
 
 
 export const Caro = () => {
   const [activeSlide, setActiveSlide] = useState([]);
-  let first = (
+  let first = 
       <div>
-         <div className="feedbacks">
-             <div className="feed_blks" style={{width: "364.333px;"}}>
+         <div className="feedbacks" style={{padding: "0px", margin: "0px", width: "100%"}}>
+             <div className="feed_blks">
                  <div className="eUgDnc">
                      <div className="iqbrwR">
                          <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg" className="icon_start"><path d="M6.075 22.605c-1.86 0-3.348-.681-4.463-2.044C.537 19.157 0 17.506 0 15.607c0-1.57.29-3.035.868-4.397a16.538 16.538 0 0 1 2.17-3.716 21.214 21.214 0 0 1 2.85-2.911A32.773 32.773 0 0 1 8.74 2.415c.868-.619 1.57-1.073 2.108-1.362.578-.29.847-.434.806-.434l1.425 1.92c-.372.165-.868.496-1.487.991-.62.454-1.24 1.012-1.86 1.672a13.72 13.72 0 0 0-1.55 2.168c-.454.743-.682 1.465-.682 2.167 0 .413.248.826.744 1.239.496.372 1.033.826 1.612 1.363.579.495 1.116 1.114 1.612 1.857.495.702.743 1.57.743 2.601 0 .909-.186 1.735-.557 2.478a5.806 5.806 0 0 1-1.364 1.92 6.011 6.011 0 0 1-1.922 1.176 6.282 6.282 0 0 1-2.293.434zm15.249.124c-.95 0-1.819-.207-2.604-.62a6.628 6.628 0 0 1-2.045-1.672 8.136 8.136 0 0 1-1.364-2.415 10.36 10.36 0 0 1-.434-3.035c0-2.147.454-4.128 1.364-5.945.95-1.858 1.983-3.448 3.099-4.769A27.826 27.826 0 0 1 23.865 0l1.798 1.672c-.372.248-.827.64-1.364 1.177a12.207 12.207 0 0 0-1.426 1.92 18.7 18.7 0 0 0-1.116 2.23c-.289.784-.433 1.547-.433 2.29 0 .496.31.909.93 1.24.62.33 1.301.742 2.045 1.238.744.495 1.426 1.135 2.046 1.92.62.743.93 1.796.93 3.158a5.31 5.31 0 0 1-.496 2.292 6.006 6.006 0 0 1-1.364 1.858 6.31 6.31 0 0 1-1.922 1.3 5.65 5.65 0 0 1-2.17.434z" fill="#FFA424"></path>
@@ -68,8 +67,10 @@ export const Caro = () => {
              </div>
          </div>
       </div>
-  )
+  
+  const aa = <div style={{border: "1px solid yellow"}}>dsdkmdsk</div>
   let toscroll = [first, first]
+
   
   const arrowRight = <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M14.2809 17.7809L14.4571 17.9571C14.0666 18.3476 13.4334 18.3476 13.0429 17.9571L13.2191 17.7809L13.0429 17.9571C12.6524 17.5666 12.6524 16.9334 13.0429 16.5429L16.8358 12.75L3.75 12.75C3.19771 12.75 2.75 12.3023 2.75 11.75C2.75 11.1977 3.19771 10.75 3.75 10.75L16.9894 10.75L13.5101 6.92267C13.1386 6.51401 13.1687 5.88157 13.5773 5.51006C13.986 5.13855 14.6184 5.16867 14.9899 5.57733L19.9877 11.0748C19.9878 11.0749 19.9879 11.0751 19.988 11.0752C20.0085 11.0976 20.028 11.121 20.0465 11.1452L14.2809 17.7809ZM14.2809 17.7809L14.4571 17.9571L19.9571 12.4571L19.7814 12.2814L19.9571 12.4571C20.0376 12.3766 20.1018 12.2854 20.1493 12.1877L14.2809 17.7809ZM20.25 11.7593C20.2501 11.7471 20.25 11.735 20.2496 11.7229L20.25 11.7593ZM20.2496 11.7229C20.2455 11.5698 20.2069 11.4249 20.1412 11.296C20.1412 11.296 20.1412 11.2961 20.1412 11.2961L20.2496 11.7229Z" fill="black" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -87,15 +88,14 @@ export const Caro = () => {
         containerProps={{
           style: {
             width: "100%",
-            margin: "auto",
-            height: "auto",
-            padding: "0px",
+             backgroundColor: "none"
           }
         }}
         activeSlideIndex={activeSlide}
         activeSlideProps={{
           style: {
-            background: "none",
+            backgroundColor: "none",
+            padding: "0px;"
           }
         }}
         onRequestChange={setActiveSlide}
@@ -124,9 +124,6 @@ export const Caro = () => {
           <div
             style={{
               width: 1000,
-              textAlign: "center",
-              boxSizing: "border-box",
-              alignSelf: "center",
             }}
             key={index}
           >

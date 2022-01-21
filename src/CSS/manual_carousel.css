@@ -2,23 +2,16 @@
 .feedbacks {
     display: flex;
     background-color: #1a1c21;
-    width: 100%;
     margin:auto;
+    width: 100%;
     flex-basis: 1;
 }
 .feed_blks {
     border-radius: 9px;
-    border: 2px dashed rgb(56, 62, 71);
     margin: 10px;
     position: relative;
     display: flex;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-   width: 200px;
-   height: auto;
-   flex-basis: 1;
-   flex-grow: 1;
+    flex-grow: 1;
 }
 .icon_start, .icon_end {
         width: 27.3px;
