@@ -1,15 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import { Premium } from './components/premium';
 import { Navbar } from './components/navbar';
 import { Explore } from './components/explore';
 import { Shorts } from './components/shorts';
+import { Router } from './routes/router';
+
 
 
 function App() {
   return (
     <div className="App">
-    <Explore />
+   <Navbar />
+    <Router />
     </div>
   );
 }
