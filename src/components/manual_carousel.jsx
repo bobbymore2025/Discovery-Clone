@@ -68,7 +68,6 @@ export const Caro = () => {
          </div>
       </div>
   
-  const aa = <div style={{border: "1px solid yellow"}}>dsdkmdsk</div>
   let toscroll = [first, first]
 
   
@@ -87,15 +86,14 @@ export const Caro = () => {
         updateOnItemClick
         containerProps={{
           style: {
-            width: "100%",
-             backgroundColor: "none"
+             backgroundColor: "none",
           }
         }}
         activeSlideIndex={activeSlide}
         activeSlideProps={{
           style: {
-            backgroundColor: "none",
-            padding: "0px;"
+            backgroundColor: "blue",
+            padding: "0px;",
           }
         }}
         onRequestChange={setActiveSlide}

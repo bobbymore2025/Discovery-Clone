@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Caro } from "./manual_carousel";
+import { Slideshow } from "./auto_carousel";
 
 import Premi_back from "../Images/premi_bck.jpg";
 import Discovery_logo from "../Images/discovery_logo.png";
@@ -25,6 +26,7 @@ import Tlc from "../Images/tlc_premi.png";
 import Trvl from "../Images/trvl_premi.png";
 import Tv_stream from "../Images/premi_tv.jpg";
 import Safe from "../Images/safe_kids.jpg";
+import Access from "../Images/get_access.jpeg"
 
 import "../CSS/premium.css"
 
@@ -224,12 +226,14 @@ export const Premium=()=>{
 
      <div className="thousand_shows">
      <div className="thousand_inner"><span className="thousand_heading">Thousands of Premium Shows</span></div>
-     <div className="thsnd_container">
-       </div>
+     <Slideshow />
      </div>
 
      <div className="get_access_block">
      <div className="getaccess_inner"><span className="getaccess_heading">Get Access To discovery+ Exclusive Originals</span></div>
+     <div >
+         <img src={Access} className="access_image"  ></img>
+     </div>
      </div>
 
      <div className="stream_prefered">
