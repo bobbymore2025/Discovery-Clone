@@ -1,6 +1,7 @@
 
 .feedbacks {
     display: flex;
+    flex-direction: row;
     background-color: #1a1c21;
     margin:auto;
     width: 100%;
@@ -9,9 +10,12 @@
 .feed_blks {
     border-radius: 9px;
     margin: 10px;
+    width: 200px;
     position: relative;
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    border: 2px dashed rgb(56, 62, 71);
 }
 .icon_start, .icon_end {
         width: 27.3px;
@@ -30,7 +34,7 @@
 }
 .feed_content {
     font-family: Roboto-Regular, sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     font-style: italic;
     line-height: 1.51;
     letter-spacing: normal;

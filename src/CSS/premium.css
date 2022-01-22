@@ -389,18 +389,11 @@ flex-direction: column;
     padding: 35px 0px;
     line-height: 1.37;
 }
-.thsnd_container {
-    height: 32vw;
-    display: flex;
-    position: relative;
-    width: 100%;
-}
 
 .get_access_block {
     width: 100vw;
     max-width: 78vw;
     margin: 0px auto;
-    border: 1px solid blue;
 }
 .stream_prefered {
     display: flex;
@@ -622,6 +615,15 @@ max-height: 35vw;
 .scrolling_feedback {
     padding: 60px 0px;
 }
+.access_image {
+    width: 80%; 
+    height: 500px;
+    margin: auto;
+}
+/* .style_nextItem {
+    visibility: hidden;
+} */
+
 
 
 /* Media quiery */
