@@ -103,8 +103,8 @@
 }
 .video_wrapper {
     margin-top: 0px;
-    border: 1px solid blue;
     margin-bottom: 20px;
+    background-color: #262931;
 }
 .video_title {
     font-size: 14px;
@@ -121,7 +121,6 @@
 .video_content_box {
     height: 460px;
     width: 99.8%;
-    border: 1px solid white;
     position: relative;
     margin: auto;
     background: black;
@@ -210,7 +209,6 @@
 }
 
 .blk3_category{
-    position: sticky;
     width: 258px;
     margin: 0px 18px;
     top: 90px;
@@ -218,7 +216,7 @@
     margin-top: 20px;
 }
 .discov_Ad {
-    position: relative;
+    position: sticky;
 }
 .ad_image {
     width: 257px;
