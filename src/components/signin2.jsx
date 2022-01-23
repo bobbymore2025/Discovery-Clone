@@ -10,7 +10,7 @@ export const Signin2 = () => {
     const otp = Math.floor(100000 + Math.random() * 900000);
     const [verifyotp,setVerifyotp] = useState("");
     const [otp2,seOtp2] = useState("");
-    const [s,setS] = useState(0);
+    const [s,setS] = useState(true);
     const navigate = useNavigate();
     
 

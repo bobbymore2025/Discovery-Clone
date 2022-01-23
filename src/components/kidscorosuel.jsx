@@ -12,29 +12,32 @@ import { useState, useEffect } from 'react';
  
 const slider = [{
   
-    title: "Mission Frontline with Farhan Aktar",
-    description:"Celebrities Trained with Member of Indan Armed Forces ",
-    image_url: "https://ap2-prod-images.disco-api.com/2022/01/18/31a06cab-27a1-4127-8c1a-63b9aa3df7f1.jpeg?w=600&p=true&q=75",
+    title: "Zig & Sharko",
+    description:"A shark will do anything to protect a mermaid from a famished hyena. ",
+    image_url: "https://ap2-prod-images.disco-api.com/2022/01/17/0082c2ce-002c-47ec-9a59-dbe309df2fcb.jpeg?w=600&p=true&q=75",
    
 },
 {
-   title: "HomeBoy",
-     description:"Renaisence Man Raiv lots of arts of creating with our hands",
-    image_url: "https://ap2-prod-images.disco-api.com/2022/01/13/46d7206b-74ba-4750-8328-e15ae1734f9b.jpeg?w=600&p=true&q=75",
+   title: "Tom & Jerry",
+     description:"This cartoon follows the antics of cat Tom in his pursuit of mouse Jerry.",
+    image_url: "https://ap2-prod-images.disco-api.com/2022/01/07/6a422c8d-06e5-44b5-bdde-1b5386692c3d.jpeg?bf=0&f=jpg&p=true&q=85&w=1000",
     text: "Science"
 },
 {
-    title: "Subhasa Chandra Bose: The Mistry ",
-    description:"Did Netaji Shubash Chandra Bose really die in a plane crash in 1945 ?  ",
-    image_url: "https://ap2-prod-images.disco-api.com/2020/04/12/f1b9b08e-c082-438c-9436-cc4dcaf4ca25.jpeg?w=600&p=true&q=75",
+  
+  title: "Zig & Sharko",
+  description:"A shark will do anything to protect a mermaid from a famished hyena. ",
+  image_url: "https://ap2-prod-images.disco-api.com/2022/01/17/0082c2ce-002c-47ec-9a59-dbe309df2fcb.jpeg?w=600&p=true&q=75",
  
 },
 {
-   title: "Food Paradice",
-    description:"Great taste of Americas one-of-kind dinning experience",
-    image_url: "https://ap2-prod-images.disco-api.com/2021/08/25/c4c3e19b-de44-46e2-9875-a36736e6e7d7.jpeg?w=600&p=true&q=75",
-   
+ title: "Tom & Jerry",
+   description:"This cartoon follows the antics of cat Tom in his pursuit of mouse Jerry.",
+  image_url: "https://ap2-prod-images.disco-api.com/2022/01/07/6a422c8d-06e5-44b5-bdde-1b5386692c3d.jpeg?bf=0&f=jpg&p=true&q=85&w=1000",
+  text: "Science"
 },
+
+
 ]
 
 

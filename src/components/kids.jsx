@@ -8,7 +8,7 @@ export const Kids=()=> {
     <Kidscorosuel />
     
      <Slider />
-     {/* <Footer /> */}
+     
      </>
     )
 }

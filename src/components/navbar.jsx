@@ -34,7 +34,7 @@ export const Navbar= () => {
                 
                  </InputGroup>
 
-                <Link to="/signin"><Button border="none" bg="blue.500" color="white"> {ss===0? "My Account " : "Sign In" } </Button></Link>
+                <Link to="/signin"><Button border="none" bg="blue.500" color="white"> {!ss? "Sign In" : "My Account " } </Button></Link>
             </Center>
            
                 </Flex>
