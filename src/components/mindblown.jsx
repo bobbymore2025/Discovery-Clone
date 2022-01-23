@@ -1,5 +1,6 @@
 export const Mindblown=()=>{
-    return(
-        <div>shorts page</div>
+    const data=[];
+    return( <> </>
+     
     )
 }

@@ -1,7 +1,7 @@
 #centerbox{
 align-self: center;
    
-  align-items: center;
+justify-content: center;
     color:white;
     margin-top: 80px;
    
@@ -10,7 +10,7 @@ align-self: center;
      align-self: center;
      padding:30px
      
-    
+     
 
  }
 

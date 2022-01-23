@@ -4,10 +4,10 @@ import {Explore} from "../components/explore"
 import {Premium} from "../components/premium"
 import {Kids} from "../components/kids"
 import {Signin} from "../components/signin"
-import {Otp} from "../components/otp"
+
 import {Mindblown}from "../components/mindblown"
 import {Shorts}from "../components/shorts"
-
+import {Watch}from "../components/watch"
 export const Router = () => {
     return (
       <>
@@ -21,7 +21,8 @@ export const Router = () => {
          <Route path="/mindblown" element={<Mindblown />} > </Route>
          <Route path="/premium" element={<Premium />} > </Route>
          <Route path="/signin" element={<Signin />} > </Route>
-         <Route path="/signin/otp" element={<Otp />} > </Route>
+     
+         <Route path="/watch" element={<Watch />} > </Route>
          <Route path="*" element={<div>Page not found</div>} />
         </Routes>
       </>

@@ -4,15 +4,15 @@ import { Navbar } from './components/navbar';
 import { Explore } from './components/explore';
 import { Shorts } from './components/shorts';
 import { Router } from './routes/router';
-
+import {Footer} from"./components/footer";
 
 
 function App() {
   return (
     <div className="App">
-   <Navbar />
+     <Navbar />
       <Router />
-    
+    <Footer />
     </div>
   );
 }

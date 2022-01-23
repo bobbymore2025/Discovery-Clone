@@ -9,7 +9,7 @@ export const Home=()=> {
     <Corosuel />
     
      <Slider />
-     <Footer />
+    
      </>
     )
 }
