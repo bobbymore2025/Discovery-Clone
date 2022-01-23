@@ -15,19 +15,18 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    gap: 0px;
 }
 .categories {
     position: sticky;
     width: 258px;
-    margin: 0px 18px;
-    height: 374px;
+    margin: 0px;
     margin-top: 20px;
 }
 .category_heading {
-    height: 30px;
-    padding: 18px 0px 16px 34px;
+    height: 50px;
+    padding: 18px 0px 18px 20px;
     align-items: center;
-    justify-content: flex-start;
     display: flex;
     background-color: #121317;
 }
@@ -36,49 +35,64 @@
     font-weight: 500;
     color: #ffffff;
     font-size: 18px;
+    padding: 0px;
 }  
 .cates {
     height: 40px;
-    padding-left: 34px;
+    padding-left: 20px;
     align-items: center;
     justify-content: flex-start;
     display: flex;
     background-color: #121317;
     cursor: pointer;
+    margin: 0px;
 }
-.cates_options {
-    font-family: "Roboto-Regular", sans-serif;
-    font-size: 16px;
-    color: #ffffff;
-    line-height: 1.33;
-    position: relative;
-}
+
 .cate_line {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px;
+    margin: 0px;
 }
 .line_content {
     border-bottom: solid 1px #ffffff;
-    margin: 0 18px 0 18px;
+    margin: 0px;
     width: 221px;
     height: 1px;
 }
-.cate_options2 {
+.cates_opt_all2, .cates_opt_ad2,
+.cates_opt_food2, .cates_opt_sci2, 
+.cates_opt_ani2, .cates_opt_life2 {
     font-family: "Roboto-Regular", sans-serif;
     font-size: 16px;
     line-height: 1.33;
     position: relative;
     color: #838991;
+    padding: 0px;
+}
+.cates_opt_all, .cates_opt_ad,
+.cates_opt_food, .cates_opt_sci, 
+.cates_opt_ani, .cates_opt_life {
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.33;
+    position: relative;
+    padding: 0px;
 }
 .line_content2 {
     border-bottom: solid 1px #30343b;
+    margin: 0px;
+    width: 221px;
+    height: 1px;
 }
 .button_cate{
     border: none;
     width: 258px;
     background-color: #121317;
     height: auto;
+    margin: 0px;
 }
 
 .short_videos_blk {
@@ -232,13 +246,12 @@
     text-align: center;
     color: #ffffff;
     width: 160px;
+    padding: 2px;
 }
 .textContainer_gapline {
-    width: 257px;
+    width: 200px;
     height: 2.5px;
-    margin: 0 20px;
     background-color: #22252a;
-    margin-top: 14px;
 }
 .text_available {
     font-family: "Roboto-Regular", sans-serif;
@@ -246,11 +259,13 @@
     line-height: 1.44;
     text-align: center;
     color: #ffffff;
+    padding: 4px 0px;
 }
 .style_imageConatiner {
     display: flex;
     justify-content: space-evenly;
     padding-top: 8px;
+    margin: 0px;
 }
 .style_hred_store {
     cursor: pointer;

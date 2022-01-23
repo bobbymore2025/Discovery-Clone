@@ -3,17 +3,67 @@ import "../CSS/shorts.css"
 
 
 export const Shorts=()=>{
-    const [selected, setselected] = useState("cates_options");
-    const [not_selected, setnot_selected] = useState("cate_options2");
-    const [Ad_selected, setad_selected] = useState("cates_options");
+    const [cate_all2, setcate_all2] = useState("cates_opt_all2");
+    const [cate_all, setcate_all] = useState("cates_opt_all");
+    const [cate_ad2, setcate_ad2] = useState("cates_opt_ad2");
+    const [cate_ad, setcate_ad] = useState("cates_opt_ad");
+    const [cate_food2, setcate_food2] = useState("cates_opt_food2");
+    const [cate_food, setcate_food] = useState("cates_opt_food");
+    const [cate_sci2, setcate_sci2] = useState("cates_opt_sci2");
+    const [cate_sci, setcate_sci] = useState("cates_opt_sci");
+    const [cate_ani2, setcate_ani2] = useState("cates_opt_ani2");
+    const [cate_ani, setcate_ani] = useState("cates_opt_ani");
+    const [cate_life2, setcate_life2] = useState("cates_opt_life2");
+    const [cate_life, setcate_life] = useState("cates_opt_life");
+   
 
-    const handlenow_Adv = ()=> {
-           setad_selected("cates_options");
-           setselected("cate_options2");
+    const handleAll = ()=> {
+        setcate_all("cates_opt_all");
+        setcate_ad2("cates_opt_ad2");
+        setcate_food2("cates_opt_food2");
+        setcate_ani2("cates_opt_ani2");
+        setcate_sci2("cates_opt_sci2");
+        setcate_life2("cates_opt_life2");
     }
-    const handlenow_all= ()=> {
-        setnot_selected("cate_options2");
-        setselected("cates_options");
+    const handleAdv = ()=> {
+        setcate_all("cates_opt_all2");
+        setcate_ad2("cates_opt_ad");
+        setcate_food2("cates_opt_food2");
+        setcate_ani2("cates_opt_ani2");
+        setcate_sci2("cates_opt_sci2");
+        setcate_life2("cates_opt_life2");
+    }
+    const handleFood = ()=> {
+        setcate_all("cates_opt_all2");
+        setcate_ad2("cates_opt_ad2");
+        setcate_food2("cates_opt_food");
+        setcate_ani2("cates_opt_ani2");
+        setcate_sci2("cates_opt_sci2");
+        setcate_life2("cates_opt_life2");
+    }
+    const handleLife = ()=> {
+        setcate_all("cates_opt_all2");
+        setcate_ad2("cates_opt_ad2");
+        setcate_food2("cates_opt_food2");
+        setcate_ani2("cates_opt_ani2");
+        setcate_sci2("cates_opt_sci2");
+        setcate_life2("cates_opt_life");
+    }
+    const handleAni = ()=> {
+        setcate_all("cates_opt_all2");
+        setcate_ad2("cates_opt_ad2");
+        setcate_food2("cates_opt_food2");
+        setcate_ani2("cates_opt_ani");
+        setcate_sci2("cates_opt_sci2");
+        setcate_life2("cates_opt_life2");
+    }
+    const handleSci = ()=> {
+        setcate_all("cates_opt_all2");
+        setcate_ad2("cates_opt_ad2");
+        setcate_food2("cates_opt_food2");
+        setcate_ani2("cates_opt_ani2");
+        setcate_sci2("cates_opt_sci");
+        setcate_life2("cates_opt_life2");
     }
     return(
         <div id="shorts" className="shorts_page">
@@ -27,46 +77,46 @@ export const Shorts=()=>{
                        <div className="cate_line"><div className="line_content"></div></div>
                </div>
 
-               <div><button className="button_cate" onClick={handlenow_all}>
+               <div><button className="button_cate"  onClick={handleAll}>
                    <div className="cates" id="#category">
-                       <span className={selected}>All</span>
+                       <span className={cate_all}>All</span>
                        </div>
-                       <div className="cate_line"><div className="line_content"></div></div>
+                       <div className="cate_line"><div className="line_content2"></div></div>
                   </button> </div> 
 
-                   <div><button className="button_cate" onClick={handlenow_Adv}>
+                   <div><button className="button_cate" onClick={handleAdv}>
                        <div className="cates" id="#category">
-                           <span className={not_selected}>Adventure</span>
+                           <span className={cate_ad2}>Adventure</span>
                            </div>
-                           <div className="cate_line"><div className="line_content line_content2"></div></div>
+                           <div className="cate_line"><div className="line_content2"></div></div>
                       </button> </div>
 
-                      <div><button className="button_cate" >
+                      <div><button className="button_cate" onClick={handleFood}>
                        <div className="cates" id="#category">
-                           <span className={not_selected}>Food</span>
+                           <span className={cate_food2}>Food</span>
                            </div>
-                           <div className="cate_line"><div className="line_content line_content2"></div></div>
+                           <div className="cate_line"><div className="line_content2"></div></div>
                       </button> </div>
 
-                      <div><button className="button_cate" >
+                      <div><button className="button_cate" onClick={handleSci}>
                        <div className="cates" id="#category">
-                           <span className={not_selected}>Science</span>
+                           <span className={cate_sci2}>Science</span>
                            </div>
-                           <div className="cate_line"><div className="line_content line_content2"></div></div>
+                           <div className="cate_line"><div className="line_content2"></div></div>
                       </button> </div>
 
-                      <div><button className="button_cate" >
+                      <div><button className="button_cate" onClick={handleAni}>
                        <div className="cates" id="#category">
-                           <span className={not_selected}>Animals</span>
+                           <span className={cate_ani2}>Animals</span>
                            </div>
-                           <div className="cate_line"><div className="line_content line_content2"></div></div>
+                           <div className="cate_line"><div className="line_content2"></div></div>
                       </button> </div>
 
-                      <div><button className="button_cate" >
+                      <div><button className="button_cate" onClick={handleLife}>
                        <div className="cates" id="#category">
-                           <span className={not_selected}>Lifestyle</span>
+                           <span className={cate_life2}>Lifestyle</span>
                            </div>
-                           <div className="cate_line"><div className="line_content line_content2"></div></div>
+                           <div className="cate_line"><div className="line_content2"></div></div>
                       </button> </div>
 
                      
