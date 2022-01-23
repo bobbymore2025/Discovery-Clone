@@ -3,10 +3,13 @@ import {Flex,Box,Spacer, Image,Input,InputGroup,InputRightElement, Center, Butto
 import {Link} from "react-router-dom"
 export const Navbar= () => {
 
+    let ss = JSON.parse(localStorage.getItem("s"));
+    console.log(ss);
+    
     return (
          <>
         
-            <Flex bg="black" alignItems="center" h="60px"gap={7} justifyContent={"center"} p="20px"  >
+            <Flex bg="black" alignItems="center" h="60px"gap={7} justifyContent={"center"} p="20px" >
                 <Box display="flex" gap={4} >
                 <Image w="200px" alt="discovery Logo" src="https://www.discoveryplus.in/129c5de772422db12a69e397768bd8ec.png" />
          
@@ -31,7 +34,7 @@ export const Navbar= () => {
                 
                  </InputGroup>
 
-                <Link to="/signin"><Button border="none" bg="blue.500" color="white"> Sign In </Button></Link>
+                <Link to="/signin"><Button border="none" bg="blue.500" color="white"> {ss===0? "My Account " : "Sign In" } </Button></Link>
             </Center>
            
                 </Flex>

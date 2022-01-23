@@ -10,7 +10,9 @@ export const Signin2 = () => {
     const otp = Math.floor(100000 + Math.random() * 900000);
     const [verifyotp,setVerifyotp] = useState("");
     const [otp2,seOtp2] = useState("");
-    const navigate = useNavigate()
+    const [s,setS] = useState(0);
+    const navigate = useNavigate();
+    
 
     useEffect(() => {
         alert("Your OTP is "+otp)
@@ -20,7 +22,9 @@ export const Signin2 = () => {
     
     const handlechange = (e) =>
     {
-        setVerifyotp(e.target.value)
+        
+        setVerifyotp(e.target.value);
+
     }
 
     const votp = () =>
@@ -28,7 +32,9 @@ export const Signin2 = () => {
         console.log(verifyotp+"   "+otp2)
 
         if(otp2 == verifyotp)
-        {
+        {   
+            
+            localStorage.setItem("s", JSON.stringify(s));
             navigate('/', { replace: true });
         }
         else
