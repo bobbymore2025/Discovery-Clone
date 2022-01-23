@@ -1,52 +1,36 @@
+import { Link, list } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-import {Link} from "react-router-dom"
 import "../CSS/signin.css"
 import { Signin2 } from "./signin2";
 
-export const Signin= () => {
 
-    
+
+export const Signin= () => {
+   
     const [ip,setIp] = useState("");
     const [mno,setMno] = useState("");
+    const navigate = useNavigate()
+    
 
     const handleChange = (e) => {
         setIp(e.target.value)
-    } 
-
-    
-    const otp = Math.floor(100000 + Math.random() * 900000);
-
-    if(ip.length === 10)
-    {
-        // alert("Your OTP is "+otp)
-        return <Signin2 />
     }
-    else
-    {
-        alert("Enter Valid Mobile Number")
-    }
-
     
+     
     const getotp = () =>
     {
-        console.log(ip)
+        
         if(ip.length === 10)
         {
-            // alert("Your OTP is "+otp)
-            return <Signin2 />
+            navigate('/signin2', { replace: true });     
         }
         else
         {
-            alert("Enter Valid Mobile Number")
+            alert("Enter Valid Number ")
         }
-
     }
-
-   
-
-    
-    
-
 
     return (
          <>
@@ -57,7 +41,9 @@ export const Signin= () => {
             <p> Save your preferences & discover great  </p>
             <p>recommendations</p>
             <input placeholder="Mobile Number" onChange={ handleChange }/><br/>
-            <button onClick={ getotp }>Get OTP</button>
+            <button onClick={getotp} >Get OTP</button>
+
+            
             <p>OR</p>
             
             <p >View other sign in Options</p>

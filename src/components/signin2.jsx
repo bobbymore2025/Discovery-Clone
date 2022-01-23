@@ -1,15 +1,22 @@
-import { useState } from "react";
-import { home } from "./home";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+
 
 
 export const Signin2 = () => {
 
     const otp = Math.floor(100000 + Math.random() * 900000);
-    alert("Your OTP is "+otp)
-    
-    
     const [verifyotp,setVerifyotp] = useState("");
+    const [otp2,seOtp2] = useState("");
+    const navigate = useNavigate()
 
+    useEffect(() => {
+        alert("Your OTP is "+otp)
+        seOtp2(otp)
+    },[]);   
+        
+    
     const handlechange = (e) =>
     {
         setVerifyotp(e.target.value)
@@ -17,9 +24,11 @@ export const Signin2 = () => {
 
     const votp = () =>
     {
-        if(otp == verifyotp)
+        console.log(verifyotp+"   "+otp2)
+
+        if(otp2 == verifyotp)
         {
-            return <home />
+            navigate('/', { replace: true });
         }
         else
         {
@@ -37,9 +46,7 @@ export const Signin2 = () => {
            <p> Save your preferences & discover great  </p>
            <p>recommendations</p>
            <input placeholder="Enter OTP " onChange={ handlechange } /><br/>
-           <button onClick={
-               votp
-           }>Verify OTP</button>
+           <button onClick={ votp } >Verify OTP</button>
            <p>OR</p>
            
            <p >View other sign in Options</p>
