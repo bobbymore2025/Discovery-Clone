@@ -35,8 +35,8 @@ export const Signin= () => {
     return (
          <>
         
-        <div id="centerbox">
-            <div>
+         <div id="centerbox">
+             <div>
                <span>Sign In Now</span>
             <p> Save your preferences & discover great  </p>
             <p>recommendations</p>

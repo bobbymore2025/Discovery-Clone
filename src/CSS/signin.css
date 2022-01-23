@@ -1,14 +1,15 @@
 #centerbox{
-align-self: center;
-   
-justify-content: center;
+
+
+ text-align: center;
     color:white;
     margin-top: 80px;
    
 }
  #centerbox >div{
-     align-self: center;
-     padding:30px
+     justify-content: center;
+     padding:30px;
+     align-items: center;
      
      
 

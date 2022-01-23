@@ -1,3 +1,4 @@
+import "../CSS/signin.css"
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -26,7 +27,7 @@ export const Signin2 = () => {
     {
         console.log(verifyotp+"   "+otp2)
 
-        if(otp2 == verifyotp)
+        if(otp2 === verifyotp)
         {
             navigate('/', { replace: true });
         }

@@ -1,11 +1,11 @@
 import {Slider} from "./slider"
 import {Caro} from "./manual_carousel"
-import { Corosuel } from "./corosuel"
+import { Kidscorosuel } from "./kidscorosuel"
 import {Footer} from"./footer"
 export const Kids=()=> {
     return (
     <>
-    <Corosuel />
+    <Kidscorosuel />
     
      <Slider />
      <Footer />
