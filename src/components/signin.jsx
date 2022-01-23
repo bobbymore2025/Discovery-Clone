@@ -1,9 +1,9 @@
 import { Link, list } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import "../CSS/signin.css"
-import { Signin2 } from "./signin2";
+
 
 
 
